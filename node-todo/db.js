@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const db = {
-    read:(dbPath,)=>{
+    read:(dbPath)=>{
         return new Promise((resolve,reject) => {
             fs.readFile(dbPath,{flag:'a+'},(error,data)=>{
                 if (error) return  reject(error)
